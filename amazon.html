@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Prime Hunter: Secret Amazon Finds</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        color: #fff;
+        background-color: #000;
+      }
+
+      /* IMPORTANT: Change 'ali_image.png' to an Amazon-themed image */
+      .overlay {
+        min-height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+          url("amazon.png") center center / cover no-repeat fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 40px 16px;
+      }
+
+      .container {
+        max-width: 480px; /* Slightly wider for English text */
+        margin: 0 auto;
+      }
+
+      .badge {
+        background: #ff4747;
+        color: white;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 20px;
+        display: inline-block;
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      h1 {
+        font-size: 2.8rem;
+        margin: 0 0 16px;
+        text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+        line-height: 1.1;
+        font-weight: 900;
+      }
+
+      h1 span {
+        color: #25d366;
+      }
+
+      .subtitle {
+        font-size: 1.25rem;
+        margin: 0 0 30px;
+        opacity: 0.95;
+        line-height: 1.5;
+        font-weight: 400;
+      }
+
+      .cta-btn {
+        display: block;
+        width: 100%;
+        background: #25d366;
+        color: #fff;
+        font-size: 1.4rem;
+        padding: 18px 20px;
+        border-radius: 12px;
+        font-weight: 800;
+        text-decoration: none;
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+        transition: transform 0.3s ease, background 0.3s ease,
+          box-shadow 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        animation: cta-ripple 2.4s infinite;
+      }
+
+      @keyframes cta-ripple {
+        0% {
+          box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55);
+          transform: scale(1);
+        }
+        60% {
+          box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+          transform: scale(1.02);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+          transform: scale(1);
+        }
+      }
+
+      .cta-btn:hover {
+        transform: scale(1.04);
+        background: #1ebe5a;
+      }
+
+      .small-note {
+        font-size: 0.85rem;
+        margin: 20px 0 35px;
+        color: #ddd;
+        opacity: 0.8;
+      }
+
+      /* --- Single Item Carousel --- */
+      .testimonial-wrapper {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-radius: 16px;
+        padding: 25px;
+        margin-top: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        height: 140px; /* Slightly taller for English word wrap */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .testimonial-card {
+        position: absolute;
+        width: 90%;
+        opacity: 0;
+        transition: opacity 0.8s ease-in-out;
+        pointer-events: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+      }
+
+      .testimonial-card.active {
+        opacity: 1;
+        position: relative;
+        pointer-events: auto;
+      }
+
+      .testimonial-text {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+        line-height: 1.4;
+        font-style: italic;
+      }
+
+      .testimonial-author {
+        font-weight: bold;
+        font-size: 0.9rem;
+        color: #25d366;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="container">
+        <div class="badge">Join 5,000+ Savvy Shoppers</div>
+
+        <h1>Deals you can't afford to <span>miss.</span></h1>
+
+        <p class="subtitle">
+          Exclusive Amazon promo codes, price glitches, and hidden lightning deals — delivered straight to your phone.
+        </p>
+
+        <a
+          class="cta-btn"
+          href="https://chat.whatsapp.com/CSLrxX505cT9Oefk5vmvya"
+          target="_blank"
+          rel="noopener"
+          onclick="ttq.track('ClickButton', {});"
+        >
+          JOIN FOR FREE
+        </a>
+
+        <p class="small-note">
+          ✓ 100% Free • ✓ No Spam • ✓ Unsubscribe Anytime
+        </p>
+
+        <div class="testimonial-wrapper">
+          <div class="testimonial-card active">
+            <p class="testimonial-text">
+              "I grabbed a Shark vacuum for 60% off because of this group. Unreal."
+            </p>
+            <p class="testimonial-author">Sarah Jenkins</p>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              "The only WhatsApp group I don't mute. The promo codes actually work."
+            </p>
+            <p class="testimonial-author">Mike Thompson</p>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              "Found a price glitch on headphones that saved me $120. Highly recommend!"
+            </p>
+            <p class="testimonial-author">Emily Rivera</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const cards = document.querySelectorAll(".testimonial-card");
+      let currentIndex = 0;
+
+      function nextTestimonial() {
+        cards[currentIndex].classList.remove("active");
+        currentIndex = (currentIndex + 1) % cards.length;
+        cards[currentIndex].classList.add("active");
+      }
+
+      setInterval(nextTestimonial, 4500); // Slightly slower rotation for reading
+    </script>
+  </body>
+</html>
